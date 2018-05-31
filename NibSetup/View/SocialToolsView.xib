@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SocialToolsView" customModule="NibSetup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nug-2L-zb3">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWP-Lu-naz">
+                            <rect key="frame" x="47.5" y="13.5" width="30" height="29"/>
+                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
+                            <state key="normal" title="Like">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="likeBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="BGf-65-VUO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="YWP-Lu-naz" firstAttribute="centerX" secondItem="nug-2L-zb3" secondAttribute="centerX" id="WoH-vO-jiS"/>
+                        <constraint firstItem="YWP-Lu-naz" firstAttribute="centerY" secondItem="nug-2L-zb3" secondAttribute="centerY" id="grP-ms-Ae6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUJ-He-AkW">
+                    <rect key="frame" x="125" y="0.0" width="125" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8U-Qt-ds8">
+                            <rect key="frame" x="42.5" y="13.5" width="40" height="29"/>
+                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
+                            <state key="normal" title="Share">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shareBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="YAE-LY-LBh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="G8U-Qt-ds8" firstAttribute="centerX" secondItem="dUJ-He-AkW" secondAttribute="centerX" id="A06-Nr-Jqt"/>
+                        <constraint firstItem="G8U-Qt-ds8" firstAttribute="centerY" secondItem="dUJ-He-AkW" secondAttribute="centerY" id="Cey-Nv-iQ0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mZ-gw-LhR">
+                    <rect key="frame" x="250" y="0.0" width="125" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBe-xh-Q8p">
+                            <rect key="frame" x="40" y="13" width="45" height="30"/>
+                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                            <state key="normal" title="Open..">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="openBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="wUQ-24-FRR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zBe-xh-Q8p" firstAttribute="centerX" secondItem="3mZ-gw-LhR" secondAttribute="centerX" id="mHT-jb-8mC"/>
+                        <constraint firstItem="zBe-xh-Q8p" firstAttribute="centerY" secondItem="3mZ-gw-LhR" secondAttribute="centerY" id="rKt-Um-s7e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dUJ-He-AkW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="OtC-Vi-Vl7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3mZ-gw-LhR" secondAttribute="trailing" id="PWR-vp-Ygm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3mZ-gw-LhR" secondAttribute="bottom" id="TGd-xM-vPq"/>
+                <constraint firstItem="nug-2L-zb3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="W0D-v5-eGn"/>
+                <constraint firstItem="nug-2L-zb3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Wwh-U9-KmU"/>
+                <constraint firstItem="3mZ-gw-LhR" firstAttribute="leading" secondItem="dUJ-He-AkW" secondAttribute="trailing" id="Yjn-2X-Mpa"/>
+                <constraint firstItem="dUJ-He-AkW" firstAttribute="leading" secondItem="nug-2L-zb3" secondAttribute="trailing" id="ZCm-TR-sg4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nug-2L-zb3" secondAttribute="bottom" id="jEo-SQ-IKI"/>
+                <constraint firstItem="dUJ-He-AkW" firstAttribute="width" secondItem="3mZ-gw-LhR" secondAttribute="width" id="nik-tS-fhK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dUJ-He-AkW" secondAttribute="bottom" id="tDb-YZ-TFe"/>
+                <constraint firstItem="nug-2L-zb3" firstAttribute="width" secondItem="dUJ-He-AkW" secondAttribute="width" id="wkb-PO-ysD"/>
+                <constraint firstItem="3mZ-gw-LhR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="zbt-Kz-68w"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="likeBtn" destination="YWP-Lu-naz" id="2cC-9I-uoL"/>
+                <outlet property="openBtn" destination="zBe-xh-Q8p" id="Afq-SV-nOo"/>
+                <outlet property="shareBtn" destination="G8U-Qt-ds8" id="IJb-nR-T35"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="313"/>
+        </view>
+    </objects>
+</document>
