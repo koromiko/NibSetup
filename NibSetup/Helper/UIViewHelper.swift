@@ -9,13 +9,17 @@
 import Foundation
 import UIKit
 
-extension UIView {
-    static func instantiateFromNib<T: UIView>() ->  T {
-        if let view = Bundle(for: self).loadNibNamed(String(describing: self), owner: nil, options: nil)?[0] as? T {
+protocol NibInstantiable {}
+
+extension UIView: NibInstantiable {}
+
+extension NibInstantiable where Self: UIView {
+    static func instantiateFromNib() -> Self {
+        if let view = Bundle(for: self).loadNibNamed(String(describing: self), owner: nil, options: nil)?[0] as? Self {
             return view
         } else {
             assert(false, "The nib named \(self) is not found")
-            return T()
+            return Self()
         }
     }
 }

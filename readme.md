@@ -32,13 +32,17 @@ let view = NSBundle.mainBundle().loadNibNamed("SocialToolsView", owner: self, op
 我們希望可以每一次取用SocialToolsView時，都不用寫上面那一堆冗長的code，也不想要每次客制化view的時候，都要一直覆寫init。在這邊，我們可以利用extension跟generic的技巧，來避免這些重覆的code，如下：
 
 ```swift
-extension UIView {
-    static func instantiateFromNib<T: UIView>() -> T {
-        if let view = Bundle(for: self).loadNibNamed(String(describing: self), owner: nil, options: nil)?[0] as? T {
+protocol NibInstantiable {}
+
+extension UIView: NibInstantiable {}
+
+extension NibInstantiable where Self: UIView {
+    static func instantiateFromNib() -> Self {
+        if let view = Bundle(for: self).loadNibNamed(String(describing: self), owner: nil, options: nil)?[0] as? Self {
             return view
         } else {
             assert(false, "The nib named \(self) is not found")
-            return T()
+            return Self()
         }
     }
 }
@@ -60,6 +64,12 @@ let view: CustomizedView = CustomizedView.instantiateFromNib()
 
 ## Dive deeper 
 仔細研究一下這份code，可以發現這個generic type T，其實是透過回傳值去infer的，這也是為甚麼我們在assign這個view的時候(let toolView: SocialToolsView = ...)，一定要標註view的type，目地就是讓compiler能夠正確infer這個T。
+
+*update:* 
+
+感謝[Hsu Li-Heng](https://www.facebook.com/yesleon?fref=gc&dti=903202893043760)大大提供的建議，利用protocol的extension能夠infer自己的特點，加上有條件的protocol extension，可以解決上述需要在code裡面explicit指定類別的問題。
+
+Ref: [Using Self in Swift Class Extensions](https://medium.com/@victor.pavlychko/using-self-in-swift-class-extensions-6421dab02587)
 
 另外我們也針對這個generic做限制(T: UIView)，目的是為了在nib找不到的時候，可以fallback到回傳T()。也因為T已經被限制是一種UIView，未來在這個extension裡面如果要針對T物件做UI相關的處理，也會變得非常容易。🍺🍺
 
