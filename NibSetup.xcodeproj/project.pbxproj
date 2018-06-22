@@ -14,6 +14,15 @@
 		B57C3B9820C02560003F280A /* SocialToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C3B9720C02560003F280A /* SocialToolsView.swift */; };
 		B57C3B9B20C025B2003F280A /* SocialToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57C3B9A20C025B2003F280A /* SocialToolsView.xib */; };
 		B57C3B9D20C02861003F280A /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C3B9C20C02861003F280A /* UIViewHelper.swift */; };
+		F1E0B75720DD601C00FE62C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0B75620DD601C00FE62C3 /* AppDelegate.m */; };
+		F1E0B75D20DD601C00FE62C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E0B75B20DD601C00FE62C3 /* Main.storyboard */; };
+		F1E0B75F20DD601E00FE62C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E0B75E20DD601E00FE62C3 /* Assets.xcassets */; };
+		F1E0B76220DD601E00FE62C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E0B76020DD601E00FE62C3 /* LaunchScreen.storyboard */; };
+		F1E0B76520DD601E00FE62C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0B76420DD601E00FE62C3 /* main.m */; };
+		F1E0B76E20DD608C00FE62C3 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0B76A20DD608C00FE62C3 /* UIView+Nib.m */; };
+		F1E0B77420DD62D900FE62C3 /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0B77320DD62D900FE62C3 /* BlurView.m */; };
+		F1E0B77920DD65EC00FE62C3 /* RootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0B77820DD65EC00FE62C3 /* RootVC.m */; };
+		F1E0B77A20DD71F200FE62C3 /* BlurView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E0B77520DD62DF00FE62C3 /* BlurView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +35,32 @@
 		B57C3B9720C02560003F280A /* SocialToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialToolsView.swift; sourceTree = "<group>"; };
 		B57C3B9A20C025B2003F280A /* SocialToolsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialToolsView.xib; sourceTree = "<group>"; };
 		B57C3B9C20C02861003F280A /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
+		F1E0B75320DD601C00FE62C3 /* NibSetupObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NibSetupObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E0B75520DD601C00FE62C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1E0B75620DD601C00FE62C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1E0B75C20DD601C00FE62C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1E0B75E20DD601E00FE62C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1E0B76120DD601E00FE62C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1E0B76320DD601E00FE62C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E0B76420DD601E00FE62C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1E0B76A20DD608C00FE62C3 /* UIView+Nib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
+		F1E0B76B20DD608C00FE62C3 /* UIView+Nib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
+		F1E0B77220DD62D900FE62C3 /* BlurView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlurView.h; sourceTree = "<group>"; };
+		F1E0B77320DD62D900FE62C3 /* BlurView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurView.m; sourceTree = "<group>"; };
+		F1E0B77520DD62DF00FE62C3 /* BlurView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlurView.xib; sourceTree = "<group>"; };
+		F1E0B77720DD65EC00FE62C3 /* RootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootVC.h; sourceTree = "<group>"; };
+		F1E0B77820DD65EC00FE62C3 /* RootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B57C3B7E20C02530003F280A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E0B75020DD601C00FE62C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B57C3B8320C02530003F280A /* NibSetup */,
+				F1E0B75420DD601C00FE62C3 /* NibSetupObjc */,
 				B57C3B8220C02530003F280A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B57C3B8120C02530003F280A /* NibSetup.app */,
+				F1E0B75320DD601C00FE62C3 /* NibSetupObjc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +119,43 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		F1E0B75420DD601C00FE62C3 /* NibSetupObjc */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0B77020DD609600FE62C3 /* Category */,
+				F1E0B77120DD60B000FE62C3 /* View */,
+				F1E0B75520DD601C00FE62C3 /* AppDelegate.h */,
+				F1E0B75620DD601C00FE62C3 /* AppDelegate.m */,
+				F1E0B77720DD65EC00FE62C3 /* RootVC.h */,
+				F1E0B77820DD65EC00FE62C3 /* RootVC.m */,
+				F1E0B75B20DD601C00FE62C3 /* Main.storyboard */,
+				F1E0B75E20DD601E00FE62C3 /* Assets.xcassets */,
+				F1E0B76020DD601E00FE62C3 /* LaunchScreen.storyboard */,
+				F1E0B76320DD601E00FE62C3 /* Info.plist */,
+				F1E0B76420DD601E00FE62C3 /* main.m */,
+			);
+			path = NibSetupObjc;
+			sourceTree = "<group>";
+		};
+		F1E0B77020DD609600FE62C3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0B76B20DD608C00FE62C3 /* UIView+Nib.h */,
+				F1E0B76A20DD608C00FE62C3 /* UIView+Nib.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F1E0B77120DD60B000FE62C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0B77220DD62D900FE62C3 /* BlurView.h */,
+				F1E0B77320DD62D900FE62C3 /* BlurView.m */,
+				F1E0B77520DD62DF00FE62C3 /* BlurView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +176,23 @@
 			productReference = B57C3B8120C02530003F280A /* NibSetup.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F1E0B75220DD601C00FE62C3 /* NibSetupObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E0B76820DD601E00FE62C3 /* Build configuration list for PBXNativeTarget "NibSetupObjc" */;
+			buildPhases = (
+				F1E0B74F20DD601C00FE62C3 /* Sources */,
+				F1E0B75020DD601C00FE62C3 /* Frameworks */,
+				F1E0B75120DD601C00FE62C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NibSetupObjc;
+			productName = NibSetupObjc;
+			productReference = F1E0B75320DD601C00FE62C3 /* NibSetupObjc.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -118,6 +205,10 @@
 				TargetAttributes = {
 					B57C3B8020C02530003F280A = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F1E0B75220DD601C00FE62C3 = {
+						CreatedOnToolsVersion = 9.4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +227,7 @@
 			projectRoot = "";
 			targets = (
 				B57C3B8020C02530003F280A /* NibSetup */,
+				F1E0B75220DD601C00FE62C3 /* NibSetupObjc */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +240,17 @@
 				B57C3B9B20C025B2003F280A /* SocialToolsView.xib in Resources */,
 				B57C3B8F20C02530003F280A /* LaunchScreen.storyboard in Resources */,
 				B57C3B8C20C02530003F280A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E0B75120DD601C00FE62C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E0B76220DD601E00FE62C3 /* LaunchScreen.storyboard in Resources */,
+				F1E0B77A20DD71F200FE62C3 /* BlurView.xib in Resources */,
+				F1E0B75F20DD601E00FE62C3 /* Assets.xcassets in Resources */,
+				F1E0B75D20DD601C00FE62C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +268,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1E0B74F20DD601C00FE62C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E0B76E20DD608C00FE62C3 /* UIView+Nib.m in Sources */,
+				F1E0B77420DD62D900FE62C3 /* BlurView.m in Sources */,
+				F1E0B76520DD601E00FE62C3 /* main.m in Sources */,
+				F1E0B77920DD65EC00FE62C3 /* RootVC.m in Sources */,
+				F1E0B75720DD601C00FE62C3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -172,6 +287,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				B57C3B8E20C02530003F280A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F1E0B75B20DD601C00FE62C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1E0B75C20DD601C00FE62C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1E0B76020DD601E00FE62C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1E0B76120DD601E00FE62C3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,6 +447,42 @@
 			};
 			name = Release;
 		};
+		F1E0B76620DD601E00FE62C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAWMT75AP6;
+				INFOPLIST_FILE = NibSetupObjc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wjkdev.NibSetupObjc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1E0B76720DD601E00FE62C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAWMT75AP6;
+				INFOPLIST_FILE = NibSetupObjc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wjkdev.NibSetupObjc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +500,15 @@
 			buildConfigurations = (
 				B57C3B9420C02530003F280A /* Debug */,
 				B57C3B9520C02530003F280A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E0B76820DD601E00FE62C3 /* Build configuration list for PBXNativeTarget "NibSetupObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E0B76620DD601E00FE62C3 /* Debug */,
+				F1E0B76720DD601E00FE62C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
