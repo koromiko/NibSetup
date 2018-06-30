@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BlurView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jg7-97-Q2f">
+                    <rect key="frame" x="137.5" y="358.5" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Ddk-YT-PxJ"/>
+                        <constraint firstAttribute="height" constant="50" id="rD1-XD-61d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <state key="normal" title="Dismiss"/>
+                    <connections>
+                        <action selector="dismissPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="03R-a7-QSq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOO-el-lrJ">
+                    <rect key="frame" x="0.0" y="95" width="375" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="gLh-y5-IA2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="90"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggn-8G-eM2">
+                    <rect key="frame" x="0.0" y="178" width="375" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IOO-el-lrJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6Dk-1U-zDH"/>
+                <constraint firstItem="Ggn-8G-eM2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Iiy-1O-g7E"/>
+                <constraint firstItem="jg7-97-Q2f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="50" id="MRG-2f-ejs"/>
+                <constraint firstItem="jg7-97-Q2f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TAg-5h-J4p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IOO-el-lrJ" secondAttribute="trailing" id="ZWA-yU-MdF"/>
+                <constraint firstItem="Ggn-8G-eM2" firstAttribute="top" secondItem="IOO-el-lrJ" secondAttribute="bottom" constant="8" id="bAd-bT-puZ"/>
+                <constraint firstItem="IOO-el-lrJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="75" id="ynM-Rk-0fj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ggn-8G-eM2" secondAttribute="trailing" id="zeO-CR-f2u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="subTitleLabel" destination="Ggn-8G-eM2" id="aNj-M3-uHc"/>
+                <outlet property="titleLabel" destination="IOO-el-lrJ" id="mcz-eR-Ake"/>
+            </connections>
+            <point key="canvasLocation" x="43.5" y="58.5"/>
+        </view>
+    </objects>
+</document>
